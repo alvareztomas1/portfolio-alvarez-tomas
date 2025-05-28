@@ -5,5 +5,17 @@
   "printWidth": 80,
   "endOfLine": "lf",
   "importOrderSeparation": true,
-  "importOrderSortSpecifiers": true
+  "importOrderSortSpecifiers": true,
+  "plugins": ["@trivago/prettier-plugin-sort-imports"],
+  "importOrder": [
+    "<THIRD_PARTY_MODULES>",
+    "^@public/(.*)$",
+    "^@styles/(.*)$",
+    "^@config/(.*)$",
+    "^@assets/(.*)$",
+    "^@components/(.*)$",
+    "^@root/(.*)$",
+    "^@/(.*)$",
+    "^[./]"
+  ]
 }
