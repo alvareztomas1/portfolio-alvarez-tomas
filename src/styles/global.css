@@ -1,1 +1,25 @@
 @import 'tailwindcss';
+
+@font-face {
+  font-family: 'FuturaNow Headline Regular';
+  src: url('/fonts/futura-now/FuturaNowHeadlineRegular.woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'FuturaNow Headline Bold';
+  src: url('/fonts/futura-now/FuturaNowHeadlineBold.woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter Reglar';
+  src: url('/fonts/inter/InterRegular.woff2');
+  font-display: swap;
+}
+
+@theme inline {
+  --font-title: 'FuturaNow Headline Bold', sans-serif;
+  --font-subtitle: 'FuturaNow Headline Regular', sans-serif;
+  --font-body: 'Inter Reglar', sans-serif;
+}
