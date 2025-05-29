@@ -22,4 +22,23 @@
   --font-title: 'FuturaNow Headline Bold', sans-serif;
   --font-subtitle: 'FuturaNow Headline Regular', sans-serif;
   --font-body: 'Inter Reglar', sans-serif;
+
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-background: var(--background);
+}
+
+@layer base {
+  :root,
+  .light {
+    --primary: #4a5568;
+    --secondary: #b7791f;
+    --background: #faf5e9;
+  }
+
+  .dark {
+    --primary: #f7fafc;
+    --secondary: #f6ad55;
+    --background: #2d3748;
+  }
 }
