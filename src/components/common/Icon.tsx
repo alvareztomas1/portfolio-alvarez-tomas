@@ -14,7 +14,7 @@ export const Icon = ({ title, icon, onClick, description }: IconProps) => {
       type="button"
     >
       {icon}
-      <p className="font-body text-sm">{description}</p>
+      <p className="font-body text-sm font-bold">{description}</p>
     </button>
   );
 };
