@@ -2,6 +2,60 @@
   "titleSection": {
     "role": "DESARROLLADOR FULL STACK",
     "description": "Desarrollador de <0>Argentina</0> 🌞 apasionado por crear soluciones innovadoras. Comprometido con la calidad del codigo, siguiendo principios <1>SOLID</1> con el objetivo de crear aplicaciones limpias, mantenibles y testeables.",
-    "contact": "CONTACT ME"
+    "contact": "CONTACTAME"
+  },
+  "experienceSection": {
+    "title": "EXPERIENCIA",
+    "jobs": [
+      {
+        "from": "Agosto 2024",
+        "to": "Mayo 2025",
+        "role": "DESARROLLADOR FULL STACK",
+        "company": {
+          "name": "Bigger",
+          "logo": {
+            "href": "/assets/logos/bigger-logo-blue.svg",
+            "alt": "Logo de Bigger Tech"
+          },
+          "location": "Sidney, Australia",
+          "description": "Compañía que ofrece servicios para el desarrollo de MVPs, escala y mantenimiento de aplicaciones web, junto con soluciones de Blockchain en Stellar."
+        },
+        "technologies": {
+          "title": "TECNOLOGIAS",
+          "stack": [
+            "TypeScript",
+            "NestJS",
+            "React",
+            "TailwindCSS",
+            "Docker",
+            "Git",
+            "Stellar",
+            "NextJS",
+            "Jest",
+            "Playwright",
+            "Cypress",
+            "Strapi",
+            "PostgreSQL",
+            "MySQL"
+          ]
+        },
+        "responsibilities": {
+          "title": "TAREAS",
+          "tasks": [
+            "Desarrollé aplicaciones web utilizando TypeScript y aplicando principios SOLID para lograr mantenibilidad, cohesión y desacoplamiento.",
+            "Creé RESTful APIs siguiendo arquitectura hexagonal, utilizando NestJS, TypeORM y PostgreSQL/MySQL.",
+            "Construí un SDK para simplificar el uso de operaciones complejas en la blockchain de Stellar.",
+            "Integré Docker para entornos de desarrollo, testing y servicios auxiliares.",
+            "Implementé autenticación con AWS Cognito y almacenamiento de imágenes en S3.",
+            "Integré Strapi CMS y desarrollé interfaces de usuario utilizando NextJS y Tailwind CSS.",
+            "Realicé testing utilizando Jest, Supertest, Cypress y Playwright.",
+            "Refactoricé una aplicación móvil en React Native para mejorar su mantenibilidad.",
+            "Configuré pipelines de CI/CD con GitHub Actions.",
+            "Diseñé un agente de IA para consultas SQL mediante chat.",
+            "Automaticé procesos con Pipedream para flujos internos y marketing."
+          ]
+        }
+      }
+    ]
   }
 }
