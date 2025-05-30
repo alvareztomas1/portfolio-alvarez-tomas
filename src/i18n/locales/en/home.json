@@ -3,5 +3,59 @@
     "role": "FULL STACK DEVELOPER",
     "description": "Developer from <0>Argentina</0> 🌞 with a passion for creating innovative solutions. Committed in code quality following <1>SOLID</1> principles for creating clean, maintainable, and testable applications.",
     "contact": "CONTACT ME"
+  },
+  "experienceSection": {
+    "title": "EXPERIENCE",
+    "jobs": [
+      {
+        "from": "August 2024",
+        "to": "May 2025",
+        "role": "FULL STACK DEVELOPER",
+        "company": {
+          "name": "Bigger",
+          "logo": {
+            "href": "/assets/logos/bigger-logo-blue.svg",
+            "alt": "Bigger Tech Logo"
+          },
+          "location": "Sydney, Australia",
+          "description": "Company that provides services for the development of MVPs, scale up and maintenance of web applications, along with Stellar Blockchain solutions."
+        },
+        "technologies": {
+          "title": "TECHNOLOGIES",
+          "stack": [
+            "TypeScript",
+            "NestJS",
+            "React",
+            "TailwindCSS",
+            "Docker",
+            "Git",
+            "Stellar",
+            "NextJS",
+            "Jest",
+            "Playwright",
+            "Cypress",
+            "Strapi",
+            "PostgreSQL",
+            "MySQL"
+          ]
+        },
+        "responsibilities": {
+          "title": "TASKS",
+          "tasks": [
+            "Developed web applications in TypeScript, applying SOLID principles to achieve maintainability, cohesion, and loose coupling.",
+            "Created RESTful APIs following hexagonal architecture, using NestJS, TypeORM, and PostgreSQL/MySQL.",
+            "Built an SDK to simplify complex Stellar operations.",
+            "Integrated Docker for development environments, testing, and auxiliary services.",
+            "Implemented authentication with AWS Cognito and image storage in S3.",
+            "Integrated Strapi CMS and built UIs with NextJS and Tailwind CSS.",
+            "Tested applications using Jest, Cypress, and Playwright.",
+            "Refactored a React Native mobile application, reducing bug reports by 25%.",
+            "Configured CI/CD pipeline with GitHub Actions.",
+            "Designed an AI agent for SQL queries via chat interface.",
+            "Automated processes using Pipedream for internal workflows and marketing tasks."
+          ]
+        }
+      }
+    ]
   }
 }
