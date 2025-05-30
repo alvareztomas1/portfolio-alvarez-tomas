@@ -11,6 +11,7 @@ import {
 
 import { AnimatedLogos } from '@components/common/AnimatedLogos';
 import { LinkWrapper } from '@components/common/LinkWrapper';
+import { ScrollArrow } from '@components/common/ScrollArrow';
 import { HeroDescription } from '@components/home/Hero/HeroDescription';
 import { HeroTitle } from '@components/home/Hero/HeroTitle';
 
@@ -20,8 +21,16 @@ type HeroProps = {
   subtitle: string;
   description: string;
   contact: string;
+  redirectTo: string;
+  redirectTarget: string;
 };
-export const Hero = ({ subtitle, description, contact }: HeroProps) => {
+export const Hero = ({
+  subtitle,
+  description,
+  contact,
+  redirectTo,
+  redirectTarget,
+}: HeroProps) => {
   const techs = [
     { icon: SiReact, name: 'React', color: '#61DAFB' },
     { icon: SiTailwindcss, name: 'Tailwind', color: '#38BDF8' },
@@ -45,6 +54,7 @@ export const Hero = ({ subtitle, description, contact }: HeroProps) => {
         >
           {contact}
         </LinkWrapper>
+        <ScrollArrow section={redirectTo} targetId={redirectTarget} />
       </section>
     </>
   );
