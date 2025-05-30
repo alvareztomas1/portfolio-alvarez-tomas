@@ -26,19 +26,39 @@
   --color-primary: var(--primary);
   --color-secondary: var(--secondary);
   --color-background: var(--background);
+
+  --color-card-background: var(--card-background);
+  --color-card-border: var(--card-border);
+  --color-card-text: var(--card-text);
+  --color-card-span: var(--card--span);
+  --color-card-span-text: var(--card--span-text);
 }
 
 @layer base {
   :root,
   .light {
     --primary: #4a5568;
-    --secondary: #b7791f;
+    --secondary: #4d61d4;
     --background: #faf5e9;
+    --card-background: #f0f4f8;
+    --card-border: #e2e8f0;
+    --card-text: #4a5568;
+    --card--span: #e2e8f0;
+    --card--span-text: #1e293b;
   }
 
   .dark {
     --primary: #f7fafc;
     --secondary: #f6ad55;
     --background: #2d3748;
+    --card-background: #1a202c;
+    --card-border: #2d3748;
+    --card-text: #f7fafc;
+    --card--span: #334155;
+    --card--span-text: #f8fafc;
   }
+}
+
+html {
+  scroll-behavior: smooth;
 }
