@@ -25,7 +25,7 @@ export const Navbar = ({ theme, toggleTheme }: NavbarProps) => {
   const socialMedia = Object.keys(SocialMedia);
 
   return (
-    <nav className="flex w-full items-center justify-between px-6 py-4 text-center">
+    <nav className="bg-background/10 fixed top-0 right-0 left-0 z-50 flex w-full items-center justify-between px-6 py-2 text-center backdrop-blur-sm">
       <div className="w-1/3" />
 
       <section className="flex w-1/3 items-center justify-center gap-5">
@@ -40,14 +40,16 @@ export const Navbar = ({ theme, toggleTheme }: NavbarProps) => {
             {(key as SocialMediaKey) === 'LinkedIn' ? (
               <Icon
                 description={key}
-                title={key}
-                icon={<FaLinkedin size={32} />}
+                title={t('linkedInTitle')}
+                icon={
+                  <FaLinkedin className="text-xl sm:text-2xl md:text-3xl" />
+                }
               />
             ) : (
               <Icon
                 description={key}
-                title={key}
-                icon={<FaGithub size={32} />}
+                title={t('gitHubTitle')}
+                icon={<FaGithub className="text-xl sm:text-2xl md:text-3xl" />}
               />
             )}
           </LinkWrapper>
@@ -59,15 +61,11 @@ export const Navbar = ({ theme, toggleTheme }: NavbarProps) => {
           onClick={() => changeLanguage(currentLanguage === 'en' ? 'es' : 'en')}
           title={t('languages')}
           icon={
-            currentLanguage === 'en' ? (
-              <p className="font-body flex items-center justify-center text-lg font-bold">
-                {Languages.en.toUpperCase()}
-              </p>
-            ) : (
-              <p className="font-body flex items-center justify-center text-lg font-bold">
-                {Languages.es.toUpperCase()}
-              </p>
-            )
+            <p className="font-body flex items-center justify-center text-sm font-bold sm:text-base">
+              {currentLanguage === 'en'
+                ? Languages.en.toUpperCase()
+                : Languages.es.toUpperCase()}
+            </p>
           }
         />
 
@@ -75,7 +73,11 @@ export const Navbar = ({ theme, toggleTheme }: NavbarProps) => {
           onClick={toggleTheme}
           title={theme === 'light' ? t('darkTheme') : t('lightTheme')}
           icon={
-            theme === 'light' ? <IoMdMoon size={28} /> : <BsSunFill size={28} />
+            theme === 'light' ? (
+              <IoMdMoon className="text-xl sm:text-2xl md:text-3xl" />
+            ) : (
+              <BsSunFill className="text-xl sm:text-2xl md:text-3xl" />
+            )
           }
         />
       </section>
