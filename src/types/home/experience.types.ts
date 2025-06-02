@@ -12,11 +12,17 @@ export type ExperienceSection = {
   jobs: JobExperience[];
 };
 
+type Website = {
+  href: string;
+  title: string;
+};
+
 type Company = {
   name: string;
   logo: Logo;
   description: string;
   location: string;
+  website: Website;
 };
 
 type Logo = {
