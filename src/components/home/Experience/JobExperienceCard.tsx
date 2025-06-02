@@ -1,8 +1,10 @@
-import type { JobExperience } from '@types/home/experience.types';
 import { CiCalendar, CiLocationOn } from 'react-icons/ci';
 
 import { Card } from '@components/common/Card';
+import { LinkWrapper } from '@components/common/LinkWrapper';
 import { Span } from '@components/common/Span';
+
+import type { JobExperience } from '@/types/home/experience.types';
 
 type JobExperienceProps = {
   from: string;
@@ -27,13 +29,19 @@ export const JobExperienceCard = ({
           {role}
         </h3>
 
-        <div className="flex h-24 w-24 items-center justify-center overflow-hidden">
-          <img
-            className="h-full w-full object-contain"
-            src={company.logo.href}
-            alt={company.name}
-          />
-        </div>
+        <LinkWrapper
+          title={company.website.title}
+          href={company.website.href}
+          target="_blank"
+        >
+          <div className="flex h-24 w-24 items-center justify-center overflow-hidden transition-all hover:scale-125 hover:brightness-110">
+            <img
+              className="h-full w-full object-contain transition-all"
+              src={company.logo.href}
+              alt={company.logo.alt}
+            />
+          </div>
+        </LinkWrapper>
       </div>
 
       <div className="font-body flex w-full flex-col items-center gap-2 font-bold md:flex-row md:justify-between">
