@@ -2,7 +2,13 @@
   "titleSection": {
     "role": "FULL STACK DEVELOPER",
     "description": "Developer from <0>Argentina</0> 🌞 with a passion for creating innovative solutions. Committed in code quality following <1>SOLID</1> principles for creating clean, maintainable, and testable applications.",
-    "contact": "CONTACT ME"
+    "contact": {
+      "title": "CONTACT ME",
+      "buttonTitle": "Send an email to alvareztomas1@outlook.es"
+    },
+    "scrollArrow": {
+      "title": "Scroll down to see my experience"
+    }
   },
   "experienceSection": {
     "title": "EXPERIENCE",
@@ -18,7 +24,11 @@
             "alt": "Bigger Tech Logo"
           },
           "location": "Sydney, Australia",
-          "description": "Company that provides services for the development of MVPs, scale up and maintenance of web applications, along with Stellar Blockchain solutions."
+          "description": "Company that provides services for the development of MVPs, scale up and maintenance of web applications, along with Stellar Blockchain solutions.",
+          "website": {
+            "href": "https://biggertech.co/",
+            "title": "Visit Bigger's website"
+          }
         },
         "technologies": {
           "title": "TECHNOLOGIES",
