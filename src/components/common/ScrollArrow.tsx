@@ -4,6 +4,7 @@ import { FaArrowDown } from 'react-icons/fa';
 type ScrollArrowProps = {
   targetId: string;
   section: string;
+  title?: string;
   size?: number;
   className?: string;
 };
@@ -13,11 +14,13 @@ export const ScrollArrow = ({
   section,
   size = 16,
   className = '',
+  title,
 }: ScrollArrowProps) => {
   return (
     <motion.a
       href={`#${targetId}`}
       animate={{ y: [0, 10, 0] }}
+      title={title}
       transition={{ repeat: Infinity, duration: 2 }}
       className={`text-secondary flex cursor-pointer items-center justify-center gap-2 rounded-full font-bold ${className}`}
     >

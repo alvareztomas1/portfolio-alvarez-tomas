@@ -21,6 +21,7 @@ function Home() {
         description={heroSection.description}
         redirectTo={experienceSection.title}
         redirectTarget="experience"
+        scrollArrowTitle={heroSection.scrollArrow.title}
       />
       <Experience
         title={experienceSection.title}
