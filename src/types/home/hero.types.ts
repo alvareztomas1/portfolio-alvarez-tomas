@@ -1,5 +1,8 @@
 export type HeroSection = {
-  contact: string;
+  contact: {
+    title: string;
+    buttonTitle: string;
+  };
   role: string;
   description: string;
   scrollArrow: {

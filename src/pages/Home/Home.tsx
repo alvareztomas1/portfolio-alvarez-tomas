@@ -16,7 +16,8 @@ function Home() {
   return (
     <>
       <Hero
-        contact={heroSection.contact}
+        contact={heroSection.contact.title}
+        buttonTitle={heroSection.contact.buttonTitle}
         subtitle={heroSection.role}
         description={heroSection.description}
         redirectTo={experienceSection.title}
