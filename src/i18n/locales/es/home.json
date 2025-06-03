@@ -151,5 +151,13 @@
         }
       }
     ]
+  },
+  "contactSection": {
+    "title": "CONTACTO",
+    "subtitle": "SI ESTÁS INTERESADO EN MI TRABAJO, NO DUDES EN CONTACTARME",
+    "emailButtonTitle": "Enviá un correo a alvareztomas1@outlook.es",
+    "linkedinButtonTitle": "Visitá el perfil de Tomás Alvarez",
+    "phoneNumberTitle": "Numero de telefono de Tomás Alvarez",
+    "response": "Estaré encantado de responder a cualquier consulta o propuesta. Respondos a la mayor brevedad posible."
   }
 }

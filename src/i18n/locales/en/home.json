@@ -151,5 +151,13 @@
         }
       }
     ]
+  },
+  "contactSection": {
+    "title": "CONTACT",
+    "subtitle": "IF YOU ARE INTRESTED IN MY WORK, FEEL FREE TO CONTACT ME",
+    "emailButtonTitle": "Send an email to alvareztomas1@outlook.es",
+    "linkedinButtonTitle": "Visit Tomás Alvarez's LinkedIn profile",
+    "phoneNumberTitle": "Tomás Alvarez's phone number",
+    "response": "I'll be glad to answer any question or proposal, giving a respond as soon as possible."
   }
 }
