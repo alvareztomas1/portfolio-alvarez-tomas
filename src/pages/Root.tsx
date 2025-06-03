@@ -18,7 +18,7 @@ export default function Root() {
       )}
 
       <Navbar theme={theme} toggleTheme={toggleTheme} />
-      <main className="flex flex-1 flex-col">
+      <main className="flex flex-1 flex-col gap-10 lg:gap-12">
         <Outlet />
       </main>
     </div>
