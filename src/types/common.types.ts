@@ -6,6 +6,10 @@ export type SubTitle = {
   subtitle: string;
 };
 
+export type Text = {
+  text: string;
+};
+
 export type Redirect = Title & {
   href: string;
 };
