@@ -67,5 +67,89 @@
         }
       }
     ]
+  },
+  "projectsSection": {
+    "title": "PROYECTOS",
+    "inProgressText": "EN PROGRESO",
+    "repositoryText": "Repositorio",
+    "projects": [
+      {
+        "title": "ALQUILER DE AUTOS",
+        "description": "Aplicación CRUD con renderizado en el servidor que gestiona la lógica de negocio de un sistema de alquiler de vehículos, permitiendo a los clientes registrar usuarios y crear reservas. La aplicación cuenta con una base de código limpia y mantenible, con módulos bien separados implementados usando el patrón MVC.",
+        "image": {
+          "href": "/projects/car-rental/home.webp",
+          "alt": "Página de inicio del proyecto de alquiler de autos"
+        },
+        "inProgress": false,
+        "technologies": [
+          "JavaScript",
+          "NodeJS",
+          "ExpressJS",
+          "Sequelize",
+          "Jest",
+          "SQLite",
+          "Bulma",
+          "Nunjucks"
+        ],
+        "github": {
+          "href": "https://github.com/alvareztomas1/car-rental",
+          "title": "Visita el repositorio de GitHub del proyecto de Alquiler de Autos"
+        }
+      },
+      {
+        "title": "PLATFORMA DE CURSOS",
+        "description": "Plataforma de cursos con <0>autenticación Cognito</0> y <1>almacenamiento en S3</1>. Incluye gestión por roles con <2>habilidades CASL</2> y pagos con <3>Stellar Blockchain</3>. El backend implementa una <4>API RESTful</4> siguiendo <5>arquitectura hexagonal</5>, con respuestas <6>HATEOAS</6> y paginación. El frontend se construirá con Vite, React y Tailwind CSS.",
+        "image": {
+          "href": "/projects/classroom/home.webp",
+          "alt": "Página de inicio del proyecto de Plataforma de Cursos"
+        },
+        "inProgress": "true",
+        "technologies": [
+          "TypeScript",
+          "NestJS",
+          "AWS",
+          "Docker",
+          "React",
+          "PostgreSQL",
+          "Tailwind",
+          "Stellar",
+          "CASL",
+          "Jest",
+          "Playwright",
+          "Supertest"
+        ],
+        "github": {
+          "frontend": {
+            "href": "",
+            "title": "Visitá el repositorio de GitHub del frontend del proyecto de Plataforma de Cursos"
+          },
+          "backend": {
+            "href": "https://github.com/alvareztomas1/classroom-backend",
+            "title": "Visitá el repositorio de GitHub del backend del proyecto de Plataforma de Cursos"
+          }
+        }
+      },
+      {
+        "title": "CRUD Clubes",
+        "description": "Gestor de clubes de fútbol con frontend en React y backend de API RESTful. Soporta operaciones CRUD para equipos ingleses, incluyendo vistas detalladas, persistencia de datos y arquitectura modular. Desarrollado con React, Node.js y Express.",
+        "image": {
+          "href": "/projects/crud-clubs/home.webp",
+          "alt": "Página de inicio del proyecto CRUD Clubes"
+        },
+        "inProgress": false,
+        "technologies": [
+          "JavaScript",
+          "NodeJS",
+          "ExpressJS",
+          "React",
+          "Bootstrap",
+          "Cypress"
+        ],
+        "github": {
+          "href": "https://github.com/alvareztomas1/club-crud",
+          "title": "Visitá el repositorio de GitHub del proyecto CRUD Clubes"
+        }
+      }
+    ]
   }
 }
