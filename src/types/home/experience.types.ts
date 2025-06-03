@@ -1,3 +1,5 @@
+import type { Image, Redirect, Title } from '@/types/common.types';
+
 export type JobExperience = {
   from: string;
   to: string;
@@ -7,15 +9,11 @@ export type JobExperience = {
   company: Company;
 };
 
-export type ExperienceSection = {
-  title: string;
+export type ExperienceSection = Title & {
   jobs: JobExperience[];
 };
 
-type Website = {
-  href: string;
-  title: string;
-};
+type Website = Redirect;
 
 type Company = {
   name: string;
@@ -25,17 +23,12 @@ type Company = {
   website: Website;
 };
 
-type Logo = {
-  alt: string;
-  href: string;
-};
-
-type Responsibilities = {
-  title: string;
+type Responsibilities = Title & {
   tasks: string[];
 };
 
-type Technologies = {
-  title: string;
+type Technologies = Title & {
   stack: string[];
 };
+
+type Logo = Image;

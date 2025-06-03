@@ -67,5 +67,89 @@
         }
       }
     ]
+  },
+  "projectsSection": {
+    "title": "PROJECTS",
+    "inProgressText": "IN PROGRESS",
+    "repositoryText": "Repository",
+    "projects": [
+      {
+        "title": "CAR RENTAL",
+        "description": "Server-Side Rendering CRUD Application that manages the business logic of a car rental system, enabling clients to register users and create vehicle reservations. The application features a clean, maintainable codebase with well-separated modules implemented using the 'Model-View-Controller' design pattern.",
+        "image": {
+          "href": "/projects/car-rental/home.webp",
+          "alt": "Home page of the Car Rental project"
+        },
+        "inProgress": false,
+        "technologies": [
+          "JavaScript",
+          "NodeJS",
+          "ExpressJS",
+          "Sequelize",
+          "Jest",
+          "SQLite",
+          "Bulma",
+          "Nunjucks"
+        ],
+        "github": {
+          "href": "https://github.com/alvareztomas1/car-rental",
+          "title": "Visit Car Rental's GitHub repository"
+        }
+      },
+      {
+        "title": "CLASSROOM PLATFORM",
+        "description": "Courses platform with <0>Cognito auth</0> and <1>S3 storage</1>. Features role-based management with <2>CASL abilities</2> and <3>Stellar Blockchain</3> payments. The backend implements a <4>RESTful API</4> following <5>hexagonal architecture</5> principles, with <6>HATEOAS</6>-formatted responses and pagination. The frontend will be built with Vite, React and Tailwind CSS.",
+        "image": {
+          "href": "/projects/classroom/home.webp",
+          "alt": "Home page of the Classroom Platform project"
+        },
+        "inProgress": "true",
+        "technologies": [
+          "TypeScript",
+          "NestJS",
+          "AWS",
+          "Docker",
+          "React",
+          "PostgreSQL",
+          "Tailwind",
+          "Stellar",
+          "CASL",
+          "Jest",
+          "Playwright",
+          "Supertest"
+        ],
+        "github": {
+          "frontend": {
+            "href": "",
+            "title": "Visit Classroom Platform's frontend GitHub repository"
+          },
+          "backend": {
+            "href": "https://github.com/alvareztomas1/classroom-backend",
+            "title": "Visit Classroom Platform's backend GitHub repository"
+          }
+        }
+      },
+      {
+        "title": "CRUD Clubs",
+        "description": "Football club manager with React frontend and RESTful API backend. Supports CRUD operations for English teams, featuring detailed views, data persistence, and a modular architecture. Built with React, Node.js, and Express.",
+        "image": {
+          "href": "/projects/crud-clubs/home.webp",
+          "alt": "Home page of the CRUD Clubs project"
+        },
+        "inProgress": false,
+        "technologies": [
+          "JavaScript",
+          "NodeJS",
+          "ExpressJS",
+          "React",
+          "Bootstrap",
+          "Cypress"
+        ],
+        "github": {
+          "href": "https://github.com/alvareztomas1/club-crud",
+          "title": "Visit CRUD Clubs's GitHub repository"
+        }
+      }
+    ]
   }
 }

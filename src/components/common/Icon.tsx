@@ -1,14 +1,21 @@
 interface IconProps {
-  title: string;
   icon: React.ReactNode;
+  title?: string;
   onClick?: () => void;
   description?: string;
+  hoverEffect?: boolean;
 }
 
-export const Icon = ({ title, icon, onClick, description }: IconProps) => {
+export const Icon = ({
+  title,
+  icon,
+  onClick,
+  description,
+  hoverEffect = true,
+}: IconProps) => {
   return (
     <button
-      className="text-primary hover:text-secondary flex cursor-pointer flex-col items-center justify-center transition-all"
+      className={`text-primary flex flex-col items-center justify-center ${hoverEffect ? 'hover:text-secondary cursor-pointer transition-all' : ''}`}
       title={title}
       onClick={onClick}
       type="button"
