@@ -6,11 +6,10 @@ import enHome from '@/i18n/locales/en/home.json';
 import enNavbar from '@/i18n/locales/en/navbar.json';
 import esHome from '@/i18n/locales/es/home.json';
 import esNavbar from '@/i18n/locales/es/navbar.json';
-import type { TranslatedResources } from '@/i18n/types';
 
 import { i18nOptions } from './config';
 
-const resources: TranslatedResources = {
+const resources = {
   en: {
     navbar: enNavbar,
     home: enHome,
