@@ -15,7 +15,7 @@ export const Projects = ({
   projects,
 }: ProjectsProps) => {
   return (
-    <section className="flex min-h-screen w-full flex-col items-center gap-3 lg:px-6">
+    <section className="flex min-h-screen w-full flex-col items-center justify-center gap-3 lg:px-6">
       <h2 className="font-title text-secondary text-2xl leading-tight font-bold md:text-3xl">
         {title}
       </h2>

@@ -1,6 +1,6 @@
-import type { JobExperience } from '@types/home/experience.types';
-
 import { JobExperienceCard } from '@components/home/Experience/JobExperienceCard';
+
+import type { JobExperience } from '@/types/home/experience.types';
 
 type ExperienceSectionProps = {
   title: string;

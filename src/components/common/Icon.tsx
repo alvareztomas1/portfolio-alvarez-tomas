@@ -4,6 +4,9 @@ interface IconProps {
   onClick?: () => void;
   description?: string;
   hoverEffect?: boolean;
+  row?: boolean;
+  gap?: number;
+  textSize?: string;
 }
 
 export const Icon = ({
@@ -12,16 +15,19 @@ export const Icon = ({
   onClick,
   description,
   hoverEffect = true,
+  row = false,
+  gap,
+  textSize = 'text-sm',
 }: IconProps) => {
   return (
     <button
-      className={`text-primary flex flex-col items-center justify-center ${hoverEffect ? 'hover:text-secondary cursor-pointer transition-all' : ''}`}
+      className={`text-primary flex items-center justify-center ${textSize ? textSize : 'text-sm'} ${gap ? `gap-${gap}` : ''} ${row ? 'flex-row' : 'flex-col'} ${hoverEffect ? 'hover:text-secondary cursor-pointer transition-all' : ''}`}
       title={title}
       onClick={onClick}
       type="button"
     >
       {icon}
-      <p className="font-body text-sm font-bold">{description}</p>
+      <p className={`font-body font-bold`}>{description}</p>
     </button>
   );
 };
