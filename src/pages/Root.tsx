@@ -1,6 +1,6 @@
 import { Outlet } from 'react-router-dom';
 
-import { Navbar } from '@components/common/NavBar';
+import { Navbar } from '@components/NavBar';
 
 import { useTheme } from '@/hooks/useTheme';
 
