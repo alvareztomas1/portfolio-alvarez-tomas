@@ -76,7 +76,7 @@ export const Contact = ({
         />
       </Card>
 
-      <p className="text-body text-card-text/60 text-justify text-sm md:text-base">
+      <p className="text-body text-card-text/60 text-center text-sm md:text-base">
         {response}
       </p>
     </section>

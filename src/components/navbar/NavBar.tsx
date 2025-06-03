@@ -27,6 +27,9 @@ export const Navbar = ({ theme, toggleTheme }: NavbarProps) => {
       <NavBarPersonalButtons
         gitHubTitle={t('gitHubTitle')}
         linkedInTitle={t('linkedInTitle')}
+        CVbuttonText={t('CVbuttonText')}
+        CVbuttonTitle={t('CVbuttonTitle')}
+        currentLanguage={currentLanguage}
       />
 
       <NavBarThemeButtons
