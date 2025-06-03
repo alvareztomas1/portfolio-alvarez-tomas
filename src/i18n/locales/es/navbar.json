@@ -3,5 +3,19 @@
   "lightTheme": "Cambiar a tema claro",
   "languages": "Cambiar idioma",
   "linkedInTitle": "Perfil de linkedIn de Tomás Alvarez",
-  "gitHubTitle": "Perfil de GitHub de Tomás Alvarez"
+  "gitHubTitle": "Perfil de GitHub de Tomás Alvarez",
+  "sections": {
+    "projects": {
+      "text": "PROYECTOS",
+      "title": "Ir a la sección de proyectos"
+    },
+    "contact": {
+      "text": "CONTACTO",
+      "title": "Ir a la sección de contacto"
+    },
+    "experience": {
+      "text": "EXPERIENCIA",
+      "title": "Ir a la sección de experiencia laboral"
+    }
+  }
 }

@@ -26,7 +26,10 @@ export const Contact = ({
   response,
 }: ContactProps) => {
   return (
-    <section className="bg-background/20 flex min-h-screen flex-col items-center justify-center gap-4 px-6">
+    <section
+      id="contact"
+      className="bg-background/20 flex min-h-screen flex-col items-center justify-center gap-4 px-6"
+    >
       <h2 className="font-title text-secondary text-2xl leading-tight font-bold md:text-3xl">
         {title}
       </h2>
