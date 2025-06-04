@@ -30,7 +30,7 @@ export const ProjectCard = ({
   return (
     <Card
       hoverEffect={false}
-      className="mx-auto flex w-7/8 flex-col justify-between rounded-2xl px-3 py-4 shadow-md transition-colors hover:shadow-sm hover:brightness-105 md:h-[700px] md:w-full md:max-w-[350px]"
+      className="mx-auto flex w-7/8 flex-col justify-between rounded-2xl px-3 py-4 shadow-md transition-normal hover:shadow-sm hover:brightness-105 md:h-[700px] md:w-full md:max-w-[350px]"
     >
       <div className="flex w-full flex-col items-center justify-between gap-4 lg:flex-row">
         <h5 className="text-primary font-title text-lg tracking-tight uppercase md:text-xl">
