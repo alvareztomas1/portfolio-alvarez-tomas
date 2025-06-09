@@ -5,13 +5,11 @@ Here you can explore my projects, skills, and everything I've been working on as
 
 🚀 **Live Demo:** [alvareztomas.vercel.app](https://alvareztomas.vercel.app/)
 
----
 
 ## 📦 Requirements
 
 - **Node.js** version **18 or higher**
 
----
 
 ## ⚙️ Getting Started
 
@@ -38,7 +36,6 @@ Follow the steps below to run this project locally:
    http://localhost:5173
    ```
 
----
 
 ## 🛠️ Tech Stack
 
