@@ -48,7 +48,7 @@ export const Hero = ({
 
   return (
     <>
-      <section className="flex min-h-screen flex-col items-center justify-center gap-8 px-6 text-center md:px-0">
+      <section className="flex min-h-screen flex-col items-center justify-center gap-8 px-6 pt-24 text-center md:px-0 md:pt-0">
         <HeroTitle subtitle={subtitle} />
         <AnimatedLogos logos={techs} />
         <HeroDescription i18nKey={description} />
