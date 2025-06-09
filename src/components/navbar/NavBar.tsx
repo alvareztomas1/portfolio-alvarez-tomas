@@ -1,10 +1,7 @@
-import { useTranslation } from 'react-i18next';
+import { NavBarBigOverlay } from '@components/navbar/NavBarBigOverlay';
+import { NavBarSmallOverlay } from '@components/navbar/NavBarSmallOverlay';
 
-import { NavBarPersonalButtons } from '@components/navbar/NavBarPersonalButtons';
-import { NavBarSectionsButtons } from '@components/navbar/NavBarSectionsButtons';
-import { NavBarThemeButtons } from '@components/navbar/NavbarThemeButtons';
-
-import { useLanguage } from '@/hooks/useLanguage';
+import { useNavBar } from '@/hooks/useNavBar';
 import type { NavBarSectionButtons } from '@/types/navbar.types';
 import type { Theme } from '@/types/theme.types';
 
@@ -14,35 +11,52 @@ type NavbarProps = {
 };
 
 export const Navbar = ({ theme, toggleTheme }: NavbarProps) => {
-  const { currentLanguage, changeLanguage } = useLanguage();
-  const { t } = useTranslation('navbar');
+  const {
+    currentLanguage,
+    isOpen,
+    t,
+    handleChangeLanguage,
+    handleBurgerButtonClick,
+  } = useNavBar();
   const navbarButtonSections = t('sections', {
     returnObjects: true,
   }) as NavBarSectionButtons;
 
   return (
-    <nav className="bg-background/10 fixed top-0 right-0 left-0 z-50 flex w-full items-center px-6 py-2 text-center backdrop-blur-sm">
-      <NavBarSectionsButtons navBarSections={navbarButtonSections} />
+    <header className="bg-background/10 fixed top-0 right-0 left-0 z-50 w-full backdrop-blur-sm">
+      <nav className="flex flex-row-reverse px-6 py-4 text-center lg:flex-row lg:items-center">
+        <NavBarSmallOverlay
+          handleBurgerButtonClick={handleBurgerButtonClick}
+          isOpen={isOpen}
+          theme={theme}
+          currentLanguage={currentLanguage}
+          darkThemeTitle={t('darkTheme')}
+          lightThemeTitle={t('lightTheme')}
+          languagesButtonTitle={t('languages')}
+          gitHubTitle={t('gitHubTitle')}
+          linkedInTitle={t('linkedInTitle')}
+          CVbuttonText={t('CVbuttonText')}
+          CVbuttonTitle={t('CVbuttonTitle')}
+          navbarButtonSections={navbarButtonSections}
+          toggleTheme={toggleTheme}
+          changeLanguage={handleChangeLanguage}
+        />
 
-      <NavBarPersonalButtons
-        gitHubTitle={t('gitHubTitle')}
-        linkedInTitle={t('linkedInTitle')}
-        CVbuttonText={t('CVbuttonText')}
-        CVbuttonTitle={t('CVbuttonTitle')}
-        currentLanguage={currentLanguage}
-      />
-
-      <NavBarThemeButtons
-        changeLanguage={() =>
-          changeLanguage(currentLanguage === 'en' ? 'es' : 'en')
-        }
-        currentLanguage={currentLanguage}
-        languagesButtonTitle={t('languages')}
-        theme={theme}
-        toggleTheme={toggleTheme}
-        darkThemeTitle={t('darkTheme')}
-        lightThemeTitle={t('lightTheme')}
-      />
-    </nav>
+        <NavBarBigOverlay
+          theme={theme}
+          toggleTheme={toggleTheme}
+          currentLanguage={currentLanguage}
+          changeLanguage={handleChangeLanguage}
+          navbarButtonSections={navbarButtonSections}
+          darkThemeTitle={t('darkTheme')}
+          lightThemeTitle={t('lightTheme')}
+          languagesButtonTitle={t('languages')}
+          gitHubTitle={t('gitHubTitle')}
+          linkedInTitle={t('linkedInTitle')}
+          CVbuttonText={t('CVbuttonText')}
+          CVbuttonTitle={t('CVbuttonTitle')}
+        />
+      </nav>
+    </header>
   );
 };

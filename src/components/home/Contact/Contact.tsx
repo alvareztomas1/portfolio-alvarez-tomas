@@ -38,7 +38,7 @@ export const Contact = ({
         {subtitle}
       </h3>
 
-      <Card hoverEffect={false} className="w-3/4 p-2 md:p-3 lg:w-2/4">
+      <Card hoverEffect={false} className="w-11/12 p-2 md:p-3 lg:w-2/4">
         <LinkWrapper
           title={emailButtonTitle}
           target="_blank"
@@ -55,14 +55,14 @@ export const Contact = ({
         <LinkWrapper
           title={linkedinButtonTitle}
           target="_blank"
-          href={`mailto:${ContactEnum.EMAIL}`}
+          href={SocialMedia.LinkedIn}
         >
           <Icon
             gap={2}
             row
             textSize="text-base md:text-lg"
             icon={<FaLinkedinIn />}
-            description={SocialMedia.LinkedIn}
+            description={SocialMedia.LinkedIn.replace('https://', '')}
           />
         </LinkWrapper>
         <Icon

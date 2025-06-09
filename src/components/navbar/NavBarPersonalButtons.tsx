@@ -28,40 +28,52 @@ export const NavBarPersonalButtons = ({
   const resumeLink = currentLanguage === 'en' ? CVLink.english : CVLink.spanish;
 
   return (
-    <section className="flex flex-1/3 items-center justify-center gap-5">
+    <ul className="flex flex-1/3 justify-center lg:gap-5">
       {socialMedia.map((key) => (
+        <li className="flex flex-1/3 justify-center lg:flex-none">
+          <LinkWrapper
+            key={key}
+            href={SocialMedia[key as SocialMediaKey]}
+            className="text-primary hover:text-secondary flex transition-all"
+            target="_blank"
+            title={key}
+          >
+            <Icon
+              gap={1}
+              row={true}
+              textSize="text-sm md:text-base"
+              description={key}
+              title={key === 'LinkedIn' ? linkedInTitle : gitHubTitle}
+              icon={
+                key === 'LinkedIn' ? (
+                  <FaLinkedin className="text-xl sm:text-2xl md:text-3xl" />
+                ) : (
+                  <FaGithub className="text-xl sm:text-2xl md:text-3xl" />
+                )
+              }
+            />
+          </LinkWrapper>
+        </li>
+      ))}
+
+      <li className="flex flex-1/3 justify-center lg:flex-none">
         <LinkWrapper
-          key={key}
-          href={SocialMedia[key as SocialMediaKey]}
-          className="text-primary hover:text-secondary transition-all"
           target="_blank"
-          title={key}
+          href={resumeLink}
+          className="text-primary hover:text-secondary flex transition-all"
+          title={CVbuttonTitle}
         >
           <Icon
-            description={key}
-            title={key === 'LinkedIn' ? linkedInTitle : gitHubTitle}
+            gap={1}
+            row={true}
+            textSize="text-sm md:text-base"
+            description={CVbuttonText}
             icon={
-              key === 'LinkedIn' ? (
-                <FaLinkedin className="text-xl sm:text-2xl md:text-3xl" />
-              ) : (
-                <FaGithub className="text-xl sm:text-2xl md:text-3xl" />
-              )
+              <FaRegUserCircle className="text-xl sm:text-2xl md:text-3xl" />
             }
           />
         </LinkWrapper>
-      ))}
-
-      <LinkWrapper
-        target="_blank"
-        href={resumeLink}
-        className="text-primary hover:text-secondary transition-all"
-        title={CVbuttonTitle}
-      >
-        <Icon
-          description={CVbuttonText}
-          icon={<FaRegUserCircle className="text-xl sm:text-2xl md:text-3xl" />}
-        />
-      </LinkWrapper>
-    </section>
+      </li>
+    </ul>
   );
 };
