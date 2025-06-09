@@ -25,12 +25,12 @@ export const NavBarThemeButtons = ({
   lightThemeTitle,
 }: NavBarThemeButtonsProps) => {
   return (
-    <section className="flex flex-1/3 items-center justify-center gap-3">
+    <>
       <Icon
         onClick={changeLanguage}
         title={languagesButtonTitle}
         icon={
-          <p className="font-body flex items-center justify-center text-sm font-bold sm:text-base">
+          <p className="font-body flex items-center justify-center text-sm font-bold sm:text-base md:text-lg">
             {currentLanguage === 'en'
               ? Languages.en.toUpperCase()
               : Languages.es.toUpperCase()}
@@ -49,6 +49,6 @@ export const NavBarThemeButtons = ({
           )
         }
       />
-    </section>
+    </>
   );
 };
