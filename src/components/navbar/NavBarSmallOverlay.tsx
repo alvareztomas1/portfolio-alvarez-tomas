@@ -55,15 +55,17 @@ export const NavBarSmallOverlay = ({
       className={`flex flex-1/3 items-center ${isOpen ? '' : 'w-full'} justify-between lg:hidden`}
     >
       <div className="flex items-center justify-center gap-3 lg:hidden">
-        <NavBarThemeButtons
-          changeLanguage={changeLanguage}
-          currentLanguage={currentLanguage}
-          languagesButtonTitle={languagesButtonTitle}
-          theme={theme}
-          toggleTheme={toggleTheme}
-          darkThemeTitle={darkThemeTitle}
-          lightThemeTitle={lightThemeTitle}
-        />
+        {!isOpen && (
+          <NavBarThemeButtons
+            changeLanguage={changeLanguage}
+            currentLanguage={currentLanguage}
+            languagesButtonTitle={languagesButtonTitle}
+            theme={theme}
+            toggleTheme={toggleTheme}
+            darkThemeTitle={darkThemeTitle}
+            lightThemeTitle={lightThemeTitle}
+          />
+        )}
       </div>
 
       <div className="flex flex-1/3 lg:hidden">
