@@ -3,7 +3,7 @@
   "lightTheme": "Cambiar a tema claro",
   "languages": "Cambiar idioma",
   "linkedInTitle": "Ir al perfil de LinkedIn de Tomás Alvarez",
-  "gitHubTitle": "Ir l perfil de GitHub de Tomás Alvarez",
+  "gitHubTitle": "Ir al perfil de GitHub de Tomás Alvarez",
   "sections": {
     "projects": {
       "text": "PROYECTOS",
@@ -18,6 +18,6 @@
       "title": "Ir a la sección de experiencia laboral"
     }
   },
-  "CVbuttonText": "Curriculum",
-  "CVbuttonTitle": "Ver curriculum de Tomás Alvarez"
+  "CVbuttonText": "Currículum",
+  "CVbuttonTitle": "Ver currículum de Tomás Alvarez"
 }
