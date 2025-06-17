@@ -1,7 +1,7 @@
 {
   "titleSection": {
     "role": "DESARROLLADOR FULL STACK",
-    "description": "Desarrollador de <0>Argentina</0> 🌞 apasionado por crear soluciones innovadoras. Comprometido con la calidad del codigo, siguiendo principios <1>SOLID</1> con el objetivo de crear aplicaciones limpias, mantenibles y testeables.",
+    "description": "Desarrollador de <0>Argentina</0> 🌞 apasionado por crear soluciones innovadoras. Comprometido con la calidad del código, siguiendo principios <1>SOLID</1> con el objetivo de crear aplicaciones limpias, mantenibles y testeables.",
     "contact": {
       "title": "CONTACTAME",
       "buttonTitle": "Enviá un correo a alvareztomas1@outlook.es"
@@ -31,7 +31,7 @@
           }
         },
         "technologies": {
-          "title": "TECNOLOGIAS",
+          "title": "TECNOLOGÍAS",
           "stack": [
             "TypeScript",
             "NestJS",
@@ -157,7 +157,7 @@
     "subtitle": "SI ESTÁS INTERESADO EN MI TRABAJO, NO DUDES EN CONTACTARME",
     "emailButtonTitle": "Enviá un correo a alvareztomas1@outlook.es",
     "linkedinButtonTitle": "Visitá el perfil de Tomás Alvarez",
-    "phoneNumberTitle": "Numero de telefono de Tomás Alvarez",
+    "phoneNumberTitle": "Número de teléfono de Tomás Alvarez",
     "response": "Estaré encantado de responder a cualquier consulta o propuesta. Respondo a la mayor brevedad posible."
   }
 }
