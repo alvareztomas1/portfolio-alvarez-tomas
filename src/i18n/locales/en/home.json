@@ -1,7 +1,7 @@
 {
   "titleSection": {
     "role": "FULL STACK DEVELOPER",
-    "description": "Developer from <0>Argentina</0> 🌞 with a passion for creating innovative solutions. Committed in code quality following <1>SOLID</1> principles for creating clean, maintainable, and testable applications.",
+    "description": "Developer from <0>Argentina</0> 🌞 with a passion for creating innovative solutions. Committed to code quality following <1>SOLID</1> principles for creating clean, maintainable, and testable applications.",
     "contact": {
       "title": "CONTACT ME",
       "buttonTitle": "Send an email to alvareztomas1@outlook.es"
@@ -154,10 +154,10 @@
   },
   "contactSection": {
     "title": "CONTACT",
-    "subtitle": "IF YOU ARE INTRESTED IN MY WORK, FEEL FREE TO CONTACT ME",
+    "subtitle": "IF YOU ARE INTERESTED IN MY WORK, FEEL FREE TO CONTACT ME",
     "emailButtonTitle": "Send an email to alvareztomas1@outlook.es",
     "linkedinButtonTitle": "Visit Tomás Alvarez's LinkedIn profile",
     "phoneNumberTitle": "Tomás Alvarez's phone number",
-    "response": "I'll be glad to answer any question or proposal, giving a respond as soon as possible."
+    "response": "I'll be glad to answer any question or proposal, giving a response as soon as possible."
   }
 }
